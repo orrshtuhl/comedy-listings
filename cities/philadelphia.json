@@ -1,0 +1,43 @@
+{
+  "slug": "philadelphia",
+  "name": "Philadelphia",
+  "region": "PA",
+  "status": "active",
+  "created_at": "2026-03-30",
+  "mailchimp_audience_id": null,
+  "mailchimp_signup_url": null,
+  "site_url": null,
+  "accent_color": "#e63946",
+  "sources": [
+    {
+      "name": "Punchline Philly",
+      "url": "https://www.punchlinephilly.com/calendar",
+      "type": "venue-direct",
+      "notes": "Philadelphia's flagship comedy club"
+    },
+    {
+      "name": "Helium Comedy Club Philadelphia",
+      "url": "https://heliumcomedy.com/philadelphia/schedule",
+      "type": "venue-direct",
+      "notes": "Major Philly comedy venue"
+    },
+    {
+      "name": "Good Good Comedy Theatre",
+      "url": "https://goodgoodcomedy.com",
+      "type": "venue-direct",
+      "notes": "Indie and alt comedy in Philadelphia"
+    },
+    {
+      "name": "Eventbrite Philadelphia Comedy",
+      "url": "https://www.eventbrite.com/d/pa--philadelphia/comedy/",
+      "type": "ticketing",
+      "notes": "Broad coverage of comedy events across the city"
+    },
+    {
+      "name": "Ticketmaster Philadelphia Comedy",
+      "url": "https://www.ticketmaster.com/search?q=comedy&city=Philadelphia",
+      "type": "ticketing",
+      "notes": "Covers larger venues and touring acts"
+    }
+  ]
+}

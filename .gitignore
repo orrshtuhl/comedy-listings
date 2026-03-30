@@ -1,0 +1,24 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Auto-generated data — tracked selectively
+# Uncomment the lines below if you want to exclude generated files from git:
+# data/
+# site/
+# drafts/
+
+# Keep drafts out of version control (may contain subscriber-facing content)
+drafts/
+
+# Secrets — never commit these
+.env
+*.key
+secrets.json
