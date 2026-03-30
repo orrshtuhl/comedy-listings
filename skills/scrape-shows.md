@@ -2,13 +2,13 @@
 
 ## Purpose
 
-Find and compile upcoming comedy shows for a given city for the current week. Output a structured list saved to `data/[city-slug]/shows.json`.
+Find and compile upcoming comedy shows for a given city for the next 6 months. Output a structured list saved to `data/[city-slug]/shows.json`.
 
 ---
 
 ## When to Run
 
-Run at the start of each week (Monday recommended) for each active city, before updating the site or drafting the MailChimp email.
+Run weekly (Monday recommended) for each active city. Each run refreshes the full 6-month forward calendar — adding newly announced shows and removing any that have passed or been cancelled.
 
 ---
 
@@ -89,7 +89,7 @@ Sort shows chronologically by date, then by time.
 
 Before saving:
 - Remove duplicates (same show listed on multiple sources)
-- Confirm all shows are within the target week's date range
+- Confirm all shows fall within the next 6 months from today's date
 - Flag any shows missing a URL — these are lower quality and should appear last
 - Aim for at least 8–10 shows; note in output if fewer were found
 

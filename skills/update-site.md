@@ -35,7 +35,7 @@ Read `data/[city-slug]/shows.json` and generate `docs/[city-slug]/index.html`.
 
 **Page requirements:**
 - Title: `[City Name] Comedy This Week — [Week of Month DD, YYYY]`
-- Shows grouped by day (Monday through Sunday)
+- Shows grouped by month, then by day within each month
 - Each show displays: performer/show name, venue, time, price, and a "Get Tickets" link
 - Shows tagged `open-mic` should be visually distinct (e.g. a subtle label or muted style)
 - Mobile-friendly layout (simple responsive CSS — no frameworks)

@@ -1,0 +1,188 @@
+{
+  "city": "philadelphia",
+  "week_of": "2026-03-30",
+  "generated_at": "2026-03-30T15:00:00",
+  "show_count": 18,
+  "shows": [
+    {
+      "name": "Comedy Allstars",
+      "venue": "Punch Line Comedy Club",
+      "date": "2026-03-31",
+      "time": "7:30 PM",
+      "price": "$33+",
+      "url": "https://www.punchlinephilly.com/shows",
+      "description": "Comedy showcase featuring multiple stand-up comedians.",
+      "tags": ["standup"]
+    },
+    {
+      "name": "Don McMillan",
+      "venue": "Helium Comedy Club Philadelphia",
+      "date": "2026-03-31",
+      "time": "7:30 PM",
+      "price": "$76+",
+      "url": "https://philadelphia.heliumcomedy.com/events",
+      "description": "Stand-up comedian and visual artist Don McMillan.",
+      "tags": ["standup"]
+    },
+    {
+      "name": "ON CINEMA: Tim Heidecker & Gregg Turkington",
+      "venue": "The Fillmore Philadelphia",
+      "date": "2026-03-31",
+      "time": "8:00 PM",
+      "price": "$48+",
+      "url": "https://www.fillmorephilly.com",
+      "description": "Tim Heidecker & Gregg Turkington live show from the ON CINEMA podcast.",
+      "tags": ["other"]
+    },
+    {
+      "name": "Alec Flynn",
+      "venue": "Helium Comedy Club Philadelphia",
+      "date": "2026-04-01",
+      "time": "7:00 PM",
+      "price": "$67+",
+      "url": "https://philadelphia.heliumcomedy.com/events",
+      "description": "Stand-up comedian Alec Flynn.",
+      "tags": ["standup"]
+    },
+    {
+      "name": "Philly All-Pro Comedy Showcase",
+      "venue": "Punch Line Comedy Club",
+      "date": "2026-04-01",
+      "time": "7:30 PM",
+      "price": "$27+",
+      "url": "https://www.punchlinephilly.com/shows",
+      "description": "Regional comedy showcase featuring Philadelphia comedians.",
+      "tags": ["standup"]
+    },
+    {
+      "name": "Dustin Nickerson",
+      "venue": "Helium Comedy Club Philadelphia",
+      "date": "2026-04-02",
+      "time": "7:15 PM",
+      "price": "$63+",
+      "url": "https://philadelphia.heliumcomedy.com/events",
+      "description": "Stand-up comedian Dustin Nickerson.",
+      "tags": ["standup"]
+    },
+    {
+      "name": "Desi Alexander: Stress Signal Tour",
+      "venue": "Punch Line Comedy Club",
+      "date": "2026-04-02",
+      "time": "7:30 PM",
+      "price": "TBD",
+      "url": "https://www.punchlinephilly.com/shows",
+      "description": "Desi Alexander performs on his Stress Signal Tour.",
+      "tags": ["standup"]
+    },
+    {
+      "name": "Whitney Cummings: Big Baby Tour",
+      "venue": "Miller Theater Philadelphia",
+      "date": "2026-04-03",
+      "time": "7:00 PM",
+      "price": "TBD",
+      "url": "https://www.ensembleartsphilly.org/tickets-and-events/ensemble-arts-philly-presents/whitney-cummings-big-baby",
+      "description": "Whitney Cummings performs her Big Baby comedy tour.",
+      "tags": ["standup"]
+    },
+    {
+      "name": "Devon Walker",
+      "venue": "Punch Line Comedy Club",
+      "date": "2026-04-03",
+      "time": "7:00 PM",
+      "price": "TBD",
+      "url": "https://www.punchlinephilly.com/shows",
+      "description": "Stand-up comedian Devon Walker.",
+      "tags": ["standup"]
+    },
+    {
+      "name": "Trae Crowder",
+      "venue": "Punch Line Comedy Club",
+      "date": "2026-04-10",
+      "time": "7:30 PM",
+      "price": "TBD",
+      "url": "https://www.ticketmaster.com/trae-crowder-philadelphia-pennsylvania-04-10-2026/event/0200638C113CD717",
+      "description": "Stand-up comedian and political humorist Trae Crowder.",
+      "tags": ["standup"]
+    },
+    {
+      "name": "Nick Offerman: Big Woodchuck Tour",
+      "venue": "The Met Philadelphia",
+      "date": "2026-04-12",
+      "time": "7:00 PM",
+      "price": "TBD",
+      "url": "https://www.livenation.com/event/vv17FZbMGkM33ijU/nick-offerman-big-woodchuck",
+      "description": "Nick Offerman presents an evening of comedy and storytelling.",
+      "tags": ["standup"]
+    },
+    {
+      "name": "Mo Gilligan: The Mo You Know",
+      "venue": "Punch Line Comedy Club",
+      "date": "2026-04-12",
+      "time": "7:30 PM",
+      "price": "TBD",
+      "url": "https://www.punchlinephilly.com/shows",
+      "description": "British-Nigerian comedian Mo Gilligan on his The Mo You Know tour.",
+      "tags": ["standup"]
+    },
+    {
+      "name": "Michael McIntyre: Hello America! Tour",
+      "venue": "Miller Theater Philadelphia",
+      "date": "2026-04-22",
+      "time": "7:30 PM",
+      "price": "TBD",
+      "url": "https://www.ensembleartsphilly.org",
+      "description": "British comedian Michael McIntyre returns to North America with his Hello America! tour.",
+      "tags": ["standup"]
+    },
+    {
+      "name": "Katt Williams: The Golden Age Tour",
+      "venue": "Liacouras Center",
+      "date": "2026-04-24",
+      "time": "8:00 PM",
+      "price": "$111+",
+      "url": "https://www.ticketmaster.com/katt-williams-philadelphia-pennsylvania-04-24-2026/event/0200637D0D3B496D",
+      "description": "Comedian Katt Williams performs on The Golden Age Tour.",
+      "tags": ["standup"]
+    },
+    {
+      "name": "Affion Crockett",
+      "venue": "Punch Line Comedy Club",
+      "date": "2026-05-01",
+      "time": "7:30 PM",
+      "price": "$65+",
+      "url": "https://www.ticketmaster.com/affion-crockett-philadelphia-pennsylvania-05-01-2026/event/02006352D4D69133",
+      "description": "Stand-up comedian and impressionist Affion Crockett. 21+ event.",
+      "tags": ["standup"]
+    },
+    {
+      "name": "Franklinland",
+      "venue": "Lantern Theater Company",
+      "date": "2026-05-07",
+      "time": "Various",
+      "price": "TBD",
+      "url": "https://www.lanterntheater.org/plays/franklinland.html",
+      "description": "Irreverent theatrical comedy about Benjamin Franklin and his son William. Runs through June 7, 2026.",
+      "tags": ["sketch"]
+    },
+    {
+      "name": "Mark Normand",
+      "venue": "Helium Comedy Club Philadelphia",
+      "date": "2026-05-29",
+      "time": "9:15 PM",
+      "price": "$95+",
+      "url": "https://philadelphia.heliumcomedy.com/events",
+      "description": "Stand-up comedian Mark Normand.",
+      "tags": ["standup"]
+    },
+    {
+      "name": "Shane Gillis & Special Guests Live",
+      "venue": "Lincoln Financial Field",
+      "date": "2026-07-17",
+      "time": "8:00 PM",
+      "price": "TBD",
+      "url": "https://www.ticketmaster.com/shane-gillis-special-guests-live-at-philadelphia-pennsylvania-07-17-2026/event/020063740112D43F",
+      "description": "Shane Gillis' massive homecoming show at Lincoln Financial Field — his largest headline show ever.",
+      "tags": ["standup"]
+    }
+  ]
+}

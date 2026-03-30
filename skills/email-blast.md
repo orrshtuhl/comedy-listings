@@ -22,7 +22,7 @@ Use the config to get:
 - `sender_signup_url` — subscribe link to include in the footer
 - `site_url` — link to the city's listings page (e.g. `https://yoursite.com/philadelphia`)
 
-Also read `data/[city-slug]/shows.json` for the current week's listings.
+Also read `data/[city-slug]/shows.json` — filter to shows in the upcoming 7 days only for the email (the full file covers 6 months, but the email highlights just the coming week).
 
 ---
 
