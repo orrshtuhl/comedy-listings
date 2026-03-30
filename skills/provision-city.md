@@ -57,8 +57,8 @@ Create `cities/[city-slug].json` with the following structure:
   "region": "State Abbreviation",
   "status": "pending",
   "created_at": "YYYY-MM-DD",
-  "mailchimp_audience_id": null,
-  "mailchimp_signup_url": null,
+  "sender_group_id": null,
+  "sender_signup_url": null,
   "site_url": null,
   "accent_color": "#e63946",
   "sources": [
@@ -86,11 +86,11 @@ Create the following empty folders (with `.gitkeep` files to preserve them in Gi
 
 ---
 
-## Step 6 — MailChimp Audience (Manual Step — Flag for User)
+## Step 6 — Sender Group (Manual Step — Flag for User)
 
-Each city needs its own MailChimp audience (mailing list). This cannot be done automatically until the MailChimp API is configured. Flag this as a required manual step:
+Each city needs its own Group in Sender (their term for a subscriber list). This cannot be done automatically until the Sender API is configured. Flag this as a required manual step:
 
-> "⚠️ Manual step required: Create a new MailChimp audience for [City Name] and add the audience ID to `cities/[city-slug].json` under `mailchimp_audience_id`."
+> "⚠️ Manual step required: Create a new Group in Sender for [City Name] and add the group ID to `cities/[city-slug].json` under `sender_group_id`."
 
 ---
 

@@ -20,7 +20,7 @@ Comedy Listings/
 ├── skills/
 │   ├── scrape-shows.md              ← How to find and compile comedy show listings for a given city
 │   ├── update-site.md               ← How to publish listings to the website (per-city + homepage)
-│   ├── mailchimp-blast.md           ← How to compose and send the weekly email for a given city
+│   ├── email-blast.md               ← How to compose and send the weekly email for a given city
 │   ├── schedule.md                  ← When to run each workflow and in what order
 │   └── provision-city.md            ← How to spin up a new city (with manual approval step)
 ├── cities/
@@ -74,7 +74,7 @@ Only cities with `"status": "active"` are included in scheduled runs.
 |---|---|---|---|
 | Scrape shows | `skills/scrape-shows.md` | Each active city | Weekly (Monday) |
 | Update website | `skills/update-site.md` | Each active city + homepage | After scraping |
-| Send MailChimp blast | `skills/mailchimp-blast.md` | Each active city | Weekly (Wednesday) |
+| Send email blast | `skills/email-blast.md` | Each active city | Weekly (Wednesday) |
 | Provision new city | `skills/provision-city.md` | New city request | On demand |
 
 ---
