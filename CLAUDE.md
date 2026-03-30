@@ -29,7 +29,7 @@ Comedy Listings/
 ├── data/
 │   └── [city-slug]/
 │       └── shows.json               ← Current week's scraped shows for that city (auto-generated)
-├── site/
+├── docs/
 │   ├── index.html                   ← City directory homepage (auto-generated)
 │   └── [city-slug]/
 │       ├── index.html               ← City listings page (auto-generated)

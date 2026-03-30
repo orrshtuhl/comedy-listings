@@ -80,8 +80,8 @@ Set `status` to `"pending"` — never `"active"` — until manually approved.
 
 Create the following empty folders (with `.gitkeep` files to preserve them in Git):
 - `data/[city-slug]/`
-- `site/[city-slug]/`
-- `site/[city-slug]/archive/`
+- `docs/[city-slug]/`
+- `docs/[city-slug]/archive/`
 - `drafts/[city-slug]/`
 
 ---
