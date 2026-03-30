@@ -8,48 +8,56 @@
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 16px;
       background: #fff;
       color: #111;
-      line-height: 1.5;
+      line-height: 1.6;
     }
 
+    a { color: #111; }
+    a:hover { color: #000; text-decoration: underline; }
+
     header {
-      border-bottom: 3px solid #e63946;
-      padding: 24px 20px 16px;
-      max-width: 720px;
+      max-width: 680px;
       margin: 0 auto;
+      padding: 40px 20px 24px;
+      border-bottom: 1px solid #111;
     }
 
     header a.back {
       display: inline-block;
-      font-size: 13px;
-      color: #666;
+      font-size: 16px;
       text-decoration: none;
-      margin-bottom: 10px;
+      color: #111;
+      margin-bottom: 16px;
     }
-    header a.back:hover { color: #e63946; }
+
+    header a.back:hover { text-decoration: underline; }
 
     header h1 {
-      font-size: 28px;
-      font-weight: 800;
-      letter-spacing: -0.5px;
-    }
-
-    header h1 span {
-      color: #e63946;
+      font-size: 16px;
+      font-weight: normal;
+      letter-spacing: 0;
     }
 
     header p.subtitle {
-      font-size: 14px;
+      font-size: 16px;
       color: #555;
       margin-top: 4px;
     }
 
     main {
-      max-width: 720px;
+      max-width: 680px;
       margin: 0 auto;
-      padding: 24px 20px 60px;
+      padding: 32px 20px 60px;
+    }
+
+    .subscribe-cta {
+      border: 1px solid #111;
+      padding: 16px;
+      margin-bottom: 40px;
+      font-size: 16px;
     }
 
     .month-group {
@@ -57,130 +65,93 @@
     }
 
     .month-label {
-      font-size: 13px;
-      font-weight: 700;
-      letter-spacing: 1.5px;
+      font-size: 16px;
+      font-weight: bold;
       text-transform: uppercase;
-      color: #e63946;
-      border-bottom: 1px solid #eee;
-      padding-bottom: 6px;
+      border-bottom: 1px solid #111;
+      padding-bottom: 4px;
       margin-bottom: 16px;
     }
 
     .show {
-      display: flex;
+      display: grid;
+      grid-template-columns: 48px 1fr;
       gap: 16px;
-      padding: 14px 0;
-      border-bottom: 1px solid #f0f0f0;
+      padding: 12px 0;
+      border-bottom: 1px solid #ddd;
     }
 
     .show:last-child { border-bottom: none; }
 
     .show-date {
-      flex: 0 0 52px;
-      text-align: center;
+      font-size: 16px;
+      padding-top: 2px;
     }
 
     .show-date .day {
-      font-size: 22px;
-      font-weight: 800;
-      line-height: 1;
+      font-weight: bold;
     }
 
     .show-date .weekday {
-      font-size: 11px;
-      text-transform: uppercase;
       color: #888;
-      letter-spacing: 0.5px;
     }
-
-    .show-info { flex: 1; }
 
     .show-name {
       font-size: 16px;
-      font-weight: 700;
+      font-weight: bold;
     }
 
     .show-name a {
-      color: #111;
       text-decoration: none;
     }
 
-    .show-name a:hover { color: #e63946; }
+    .show-name a:hover { text-decoration: underline; }
 
     .show-meta {
-      font-size: 13px;
-      color: #555;
+      font-size: 16px;
+      color: #444;
       margin-top: 2px;
     }
 
-    .show-meta .venue { font-weight: 500; color: #333; }
-
     .show-price {
-      font-size: 13px;
-      font-weight: 600;
-      color: #e63946;
-      margin-top: 4px;
+      font-size: 16px;
+      margin-top: 2px;
     }
 
     .tag {
-      display: inline-block;
-      font-size: 10px;
-      font-weight: 600;
-      letter-spacing: 0.5px;
-      text-transform: uppercase;
-      background: #f4f4f4;
+      font-size: 16px;
+      font-weight: normal;
       color: #666;
-      padding: 2px 6px;
-      border-radius: 3px;
-      margin-left: 6px;
-      vertical-align: middle;
     }
 
-    .tag.open-mic { background: #fff3cd; color: #856404; }
+    .tag::before { content: " ["; }
+    .tag::after { content: "]"; }
 
     footer {
-      max-width: 720px;
+      max-width: 680px;
       margin: 0 auto;
       padding: 20px 20px 40px;
-      border-top: 1px solid #eee;
-      font-size: 13px;
-      color: #888;
+      border-top: 1px solid #111;
+      font-size: 16px;
+      color: #555;
     }
 
-    footer a { color: #e63946; text-decoration: none; }
+    footer a { color: #111; }
     footer a:hover { text-decoration: underline; }
-
-    .subscribe-cta {
-      background: #fff8f8;
-      border: 1px solid #fdd;
-      border-radius: 6px;
-      padding: 14px 16px;
-      margin-bottom: 40px;
-      font-size: 14px;
-    }
-
-    .subscribe-cta strong { display: block; margin-bottom: 4px; }
-
-    @media (max-width: 480px) {
-      header h1 { font-size: 22px; }
-      .show-date .day { font-size: 18px; }
-    }
   </style>
 </head>
 <body>
 
 <header>
-  <a class="back" href="../">← All cities</a>
-  <h1>Philadelphia <span>Comedy</span></h1>
-  <p class="subtitle">Upcoming shows · Updated March 30, 2026</p>
+  <a class="back" href="../">← all cities</a>
+  <h1>PHILADELPHIA COMEDY</h1>
+  <p class="subtitle">upcoming shows / updated march 30, 2026</p>
 </header>
 
 <main>
 
   <div class="subscribe-cta">
-    <strong>Get this in your inbox every week.</strong>
-    Subscribe to the Philadelphia comedy newsletter — free, no spam. <a href="#">Sign up →</a>
+    get this in your inbox every week. &rarr; <a href="#">sign up</a>
   </div>
 
   <!-- MARCH -->
@@ -188,28 +159,28 @@
     <div class="month-label">March 2026</div>
 
     <div class="show">
-      <div class="show-date"><div class="day">31</div><div class="weekday">Tue</div></div>
+      <div class="show-date"><div class="day">31</div><div class="weekday">tue</div></div>
       <div class="show-info">
         <div class="show-name"><a href="https://www.punchlinephilly.com/shows" target="_blank">Comedy Allstars</a></div>
-        <div class="show-meta"><span class="venue">Punch Line Comedy Club</span> · 7:30 PM</div>
+        <div class="show-meta">Punch Line Comedy Club &mdash; 7:30 PM</div>
         <div class="show-price">$33+</div>
       </div>
     </div>
 
     <div class="show">
-      <div class="show-date"><div class="day">31</div><div class="weekday">Tue</div></div>
+      <div class="show-date"><div class="day">31</div><div class="weekday">tue</div></div>
       <div class="show-info">
         <div class="show-name"><a href="https://philadelphia.heliumcomedy.com/events" target="_blank">Don McMillan</a></div>
-        <div class="show-meta"><span class="venue">Helium Comedy Club</span> · 7:30 PM</div>
+        <div class="show-meta">Helium Comedy Club &mdash; 7:30 PM</div>
         <div class="show-price">$76+</div>
       </div>
     </div>
 
     <div class="show">
-      <div class="show-date"><div class="day">31</div><div class="weekday">Tue</div></div>
+      <div class="show-date"><div class="day">31</div><div class="weekday">tue</div></div>
       <div class="show-info">
-        <div class="show-name"><a href="https://www.fillmorephilly.com" target="_blank">ON CINEMA: Tim Heidecker & Gregg Turkington</a></div>
-        <div class="show-meta"><span class="venue">The Fillmore Philadelphia</span> · 8:00 PM</div>
+        <div class="show-name"><a href="https://www.fillmorephilly.com" target="_blank">ON CINEMA: Tim Heidecker &amp; Gregg Turkington</a></div>
+        <div class="show-meta">The Fillmore Philadelphia &mdash; 8:00 PM</div>
         <div class="show-price">$48+</div>
       </div>
     </div>
@@ -220,100 +191,100 @@
     <div class="month-label">April 2026</div>
 
     <div class="show">
-      <div class="show-date"><div class="day">1</div><div class="weekday">Wed</div></div>
+      <div class="show-date"><div class="day">1</div><div class="weekday">wed</div></div>
       <div class="show-info">
         <div class="show-name"><a href="https://philadelphia.heliumcomedy.com/events" target="_blank">Alec Flynn</a></div>
-        <div class="show-meta"><span class="venue">Helium Comedy Club</span> · 7:00 PM</div>
+        <div class="show-meta">Helium Comedy Club &mdash; 7:00 PM</div>
         <div class="show-price">$67+</div>
       </div>
     </div>
 
     <div class="show">
-      <div class="show-date"><div class="day">1</div><div class="weekday">Wed</div></div>
+      <div class="show-date"><div class="day">1</div><div class="weekday">wed</div></div>
       <div class="show-info">
         <div class="show-name"><a href="https://www.punchlinephilly.com/shows" target="_blank">Philly All-Pro Comedy Showcase</a></div>
-        <div class="show-meta"><span class="venue">Punch Line Comedy Club</span> · 7:30 PM</div>
+        <div class="show-meta">Punch Line Comedy Club &mdash; 7:30 PM</div>
         <div class="show-price">$27+</div>
       </div>
     </div>
 
     <div class="show">
-      <div class="show-date"><div class="day">2</div><div class="weekday">Thu</div></div>
+      <div class="show-date"><div class="day">2</div><div class="weekday">thu</div></div>
       <div class="show-info">
         <div class="show-name"><a href="https://philadelphia.heliumcomedy.com/events" target="_blank">Dustin Nickerson</a></div>
-        <div class="show-meta"><span class="venue">Helium Comedy Club</span> · 7:15 PM</div>
+        <div class="show-meta">Helium Comedy Club &mdash; 7:15 PM</div>
         <div class="show-price">$63+</div>
       </div>
     </div>
 
     <div class="show">
-      <div class="show-date"><div class="day">2</div><div class="weekday">Thu</div></div>
+      <div class="show-date"><div class="day">2</div><div class="weekday">thu</div></div>
       <div class="show-info">
         <div class="show-name"><a href="https://www.punchlinephilly.com/shows" target="_blank">Desi Alexander: Stress Signal Tour</a></div>
-        <div class="show-meta"><span class="venue">Punch Line Comedy Club</span> · 7:30 PM</div>
+        <div class="show-meta">Punch Line Comedy Club &mdash; 7:30 PM</div>
         <div class="show-price">TBD</div>
       </div>
     </div>
 
     <div class="show">
-      <div class="show-date"><div class="day">3</div><div class="weekday">Fri</div></div>
+      <div class="show-date"><div class="day">3</div><div class="weekday">fri</div></div>
       <div class="show-info">
         <div class="show-name"><a href="https://www.ensembleartsphilly.org/tickets-and-events/ensemble-arts-philly-presents/whitney-cummings-big-baby" target="_blank">Whitney Cummings: Big Baby Tour</a></div>
-        <div class="show-meta"><span class="venue">Miller Theater</span> · 7:00 PM</div>
+        <div class="show-meta">Miller Theater &mdash; 7:00 PM</div>
         <div class="show-price">TBD</div>
       </div>
     </div>
 
     <div class="show">
-      <div class="show-date"><div class="day">3</div><div class="weekday">Fri</div></div>
+      <div class="show-date"><div class="day">3</div><div class="weekday">fri</div></div>
       <div class="show-info">
         <div class="show-name"><a href="https://www.punchlinephilly.com/shows" target="_blank">Devon Walker</a></div>
-        <div class="show-meta"><span class="venue">Punch Line Comedy Club</span> · 7:00 PM</div>
+        <div class="show-meta">Punch Line Comedy Club &mdash; 7:00 PM</div>
         <div class="show-price">TBD</div>
       </div>
     </div>
 
     <div class="show">
-      <div class="show-date"><div class="day">10</div><div class="weekday">Fri</div></div>
+      <div class="show-date"><div class="day">10</div><div class="weekday">fri</div></div>
       <div class="show-info">
         <div class="show-name"><a href="https://www.ticketmaster.com/trae-crowder-philadelphia-pennsylvania-04-10-2026/event/0200638C113CD717" target="_blank">Trae Crowder</a></div>
-        <div class="show-meta"><span class="venue">Punch Line Comedy Club</span> · 7:30 PM</div>
+        <div class="show-meta">Punch Line Comedy Club &mdash; 7:30 PM</div>
         <div class="show-price">TBD</div>
       </div>
     </div>
 
     <div class="show">
-      <div class="show-date"><div class="day">12</div><div class="weekday">Sun</div></div>
+      <div class="show-date"><div class="day">12</div><div class="weekday">sun</div></div>
       <div class="show-info">
         <div class="show-name"><a href="https://www.livenation.com/event/vv17FZbMGkM33ijU/nick-offerman-big-woodchuck" target="_blank">Nick Offerman: Big Woodchuck Tour</a></div>
-        <div class="show-meta"><span class="venue">The Met Philadelphia</span> · 7:00 PM</div>
+        <div class="show-meta">The Met Philadelphia &mdash; 7:00 PM</div>
         <div class="show-price">TBD</div>
       </div>
     </div>
 
     <div class="show">
-      <div class="show-date"><div class="day">12</div><div class="weekday">Sun</div></div>
+      <div class="show-date"><div class="day">12</div><div class="weekday">sun</div></div>
       <div class="show-info">
         <div class="show-name"><a href="https://www.punchlinephilly.com/shows" target="_blank">Mo Gilligan: The Mo You Know</a></div>
-        <div class="show-meta"><span class="venue">Punch Line Comedy Club</span> · 7:30 PM</div>
+        <div class="show-meta">Punch Line Comedy Club &mdash; 7:30 PM</div>
         <div class="show-price">TBD</div>
       </div>
     </div>
 
     <div class="show">
-      <div class="show-date"><div class="day">22</div><div class="weekday">Wed</div></div>
+      <div class="show-date"><div class="day">22</div><div class="weekday">wed</div></div>
       <div class="show-info">
         <div class="show-name"><a href="https://www.ensembleartsphilly.org" target="_blank">Michael McIntyre: Hello America! Tour</a></div>
-        <div class="show-meta"><span class="venue">Miller Theater</span> · 7:30 PM</div>
+        <div class="show-meta">Miller Theater &mdash; 7:30 PM</div>
         <div class="show-price">TBD</div>
       </div>
     </div>
 
     <div class="show">
-      <div class="show-date"><div class="day">24</div><div class="weekday">Fri</div></div>
+      <div class="show-date"><div class="day">24</div><div class="weekday">fri</div></div>
       <div class="show-info">
         <div class="show-name"><a href="https://www.ticketmaster.com/katt-williams-philadelphia-pennsylvania-04-24-2026/event/0200637D0D3B496D" target="_blank">Katt Williams: The Golden Age Tour</a></div>
-        <div class="show-meta"><span class="venue">Liacouras Center</span> · 8:00 PM</div>
+        <div class="show-meta">Liacouras Center &mdash; 8:00 PM</div>
         <div class="show-price">$111+</div>
       </div>
     </div>
@@ -324,28 +295,28 @@
     <div class="month-label">May 2026</div>
 
     <div class="show">
-      <div class="show-date"><div class="day">1</div><div class="weekday">Fri</div></div>
+      <div class="show-date"><div class="day">1</div><div class="weekday">fri</div></div>
       <div class="show-info">
         <div class="show-name"><a href="https://www.ticketmaster.com/affion-crockett-philadelphia-pennsylvania-05-01-2026/event/02006352D4D69133" target="_blank">Affion Crockett</a></div>
-        <div class="show-meta"><span class="venue">Punch Line Comedy Club</span> · 7:30 PM · 21+</div>
+        <div class="show-meta">Punch Line Comedy Club &mdash; 7:30 PM &mdash; 21+</div>
         <div class="show-price">$65+</div>
       </div>
     </div>
 
     <div class="show">
-      <div class="show-date"><div class="day">7</div><div class="weekday">Thu</div></div>
+      <div class="show-date"><div class="day">7</div><div class="weekday">thu</div></div>
       <div class="show-info">
         <div class="show-name"><a href="https://www.lanterntheater.org/plays/franklinland.html" target="_blank">Franklinland</a><span class="tag">sketch</span></div>
-        <div class="show-meta"><span class="venue">Lantern Theater Company</span> · Various times · Runs through June 7</div>
+        <div class="show-meta">Lantern Theater Company &mdash; various times &mdash; runs through june 7</div>
         <div class="show-price">TBD</div>
       </div>
     </div>
 
     <div class="show">
-      <div class="show-date"><div class="day">29</div><div class="weekday">Fri</div></div>
+      <div class="show-date"><div class="day">29</div><div class="weekday">fri</div></div>
       <div class="show-info">
         <div class="show-name"><a href="https://philadelphia.heliumcomedy.com/events" target="_blank">Mark Normand</a></div>
-        <div class="show-meta"><span class="venue">Helium Comedy Club</span> · 9:15 PM</div>
+        <div class="show-meta">Helium Comedy Club &mdash; 9:15 PM</div>
         <div class="show-price">$95+</div>
       </div>
     </div>
@@ -356,10 +327,10 @@
     <div class="month-label">July 2026</div>
 
     <div class="show">
-      <div class="show-date"><div class="day">17</div><div class="weekday">Fri</div></div>
+      <div class="show-date"><div class="day">17</div><div class="weekday">fri</div></div>
       <div class="show-info">
-        <div class="show-name"><a href="https://www.ticketmaster.com/shane-gillis-special-guests-live-at-philadelphia-pennsylvania-07-17-2026/event/020063740112D43F" target="_blank">Shane Gillis & Special Guests Live</a></div>
-        <div class="show-meta"><span class="venue">Lincoln Financial Field</span> · 8:00 PM</div>
+        <div class="show-name"><a href="https://www.ticketmaster.com/shane-gillis-special-guests-live-at-philadelphia-pennsylvania-07-17-2026/event/020063740112D43F" target="_blank">Shane Gillis &amp; Special Guests Live</a></div>
+        <div class="show-meta">Lincoln Financial Field &mdash; 8:00 PM</div>
         <div class="show-price">TBD</div>
       </div>
     </div>
@@ -368,7 +339,7 @@
 </main>
 
 <footer>
-  Updated March 30, 2026 · <a href="../">All cities</a> · <a href="#">Subscribe to weekly email</a>
+  updated march 30, 2026 &mdash; <a href="../">all cities</a> &mdash; <a href="#">subscribe</a>
 </footer>
 
 </body>

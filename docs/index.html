@@ -3,50 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Comedy Listings — Find Shows In Your City</title>
+  <title>Comedy Listings</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 16px;
       background: #fff;
       color: #111;
-      line-height: 1.5;
+      line-height: 1.6;
     }
 
+    a { color: #111; }
+    a:hover { text-decoration: underline; }
+
     header {
-      border-bottom: 3px solid #e63946;
-      padding: 32px 20px 20px;
-      max-width: 720px;
+      max-width: 680px;
       margin: 0 auto;
+      padding: 40px 20px 24px;
+      border-bottom: 1px solid #111;
     }
 
     header h1 {
-      font-size: 32px;
-      font-weight: 800;
-      letter-spacing: -0.5px;
+      font-size: 16px;
+      font-weight: bold;
     }
 
-    header h1 span { color: #e63946; }
-
     header p {
-      font-size: 15px;
+      font-size: 16px;
       color: #555;
-      margin-top: 6px;
+      margin-top: 4px;
     }
 
     main {
-      max-width: 720px;
+      max-width: 680px;
       margin: 0 auto;
       padding: 32px 20px 60px;
     }
 
     .section-label {
-      font-size: 12px;
-      font-weight: 700;
-      letter-spacing: 1.5px;
+      font-size: 16px;
+      font-weight: bold;
       text-transform: uppercase;
-      color: #aaa;
+      border-bottom: 1px solid #111;
+      padding-bottom: 4px;
       margin-bottom: 16px;
     }
 
@@ -56,7 +57,7 @@
     }
 
     .city-list li {
-      border-bottom: 1px solid #f0f0f0;
+      border-bottom: 1px solid #ddd;
     }
 
     .city-list li:last-child { border-bottom: none; }
@@ -65,87 +66,64 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 16px 0;
+      padding: 14px 0;
       text-decoration: none;
       color: #111;
+      font-size: 16px;
     }
 
-    .city-list a:hover .city-name { color: #e63946; }
-
-    .city-name {
-      font-size: 18px;
-      font-weight: 700;
-    }
+    .city-list a:hover .city-name { text-decoration: underline; }
 
     .city-region {
-      font-size: 13px;
       color: #888;
-      margin-top: 2px;
-    }
-
-    .city-arrow {
-      font-size: 20px;
-      color: #ccc;
+      margin-left: 8px;
     }
 
     .request-box {
-      background: #f9f9f9;
-      border: 1px solid #eee;
-      border-radius: 6px;
-      padding: 20px;
-      font-size: 14px;
+      border: 1px solid #ddd;
+      padding: 16px;
+      font-size: 16px;
       color: #555;
     }
 
-    .request-box strong {
-      display: block;
-      color: #111;
-      font-size: 15px;
-      margin-bottom: 6px;
-    }
-
     footer {
-      max-width: 720px;
+      max-width: 680px;
       margin: 0 auto;
       padding: 20px 20px 40px;
-      border-top: 1px solid #eee;
-      font-size: 13px;
-      color: #aaa;
+      border-top: 1px solid #111;
+      font-size: 16px;
+      color: #888;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Comedy <span>Listings</span></h1>
-  <p>Weekly comedy show listings, automatically updated.</p>
+  <h1>COMEDY LISTINGS</h1>
+  <p>weekly comedy show listings, automatically updated.</p>
 </header>
 
 <main>
 
-  <p class="section-label">Cities</p>
+  <div class="section-label">Cities</div>
 
   <ul class="city-list">
     <li>
       <a href="philadelphia/">
-        <div>
-          <div class="city-name">Philadelphia</div>
-          <div class="city-region">Pennsylvania</div>
-        </div>
-        <span class="city-arrow">→</span>
+        <span><span class="city-name">Philadelphia</span><span class="city-region">PA</span></span>
+        <span>&rarr;</span>
       </a>
     </li>
   </ul>
 
   <div class="request-box">
-    <strong>Don't see your city?</strong>
-    More cities coming soon. Check back for updates.
+    don't see your city? more coming soon.
   </div>
 
 </main>
 
 <footer>
-  Updated March 30, 2026
+  updated march 30, 2026
 </footer>
 
 </body>
