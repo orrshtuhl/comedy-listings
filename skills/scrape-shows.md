@@ -41,6 +41,22 @@ Prefer sources in this order:
 3. **City guides** — Time Out, local alt-weeklies (good coverage, less structured)
 4. **Social/Facebook** — use as a gap-filler, not primary
 
+### Mixed-Programming Sources (`filter_mode: detect-comedy`)
+
+Some sources in the city config are general venues or promoters that book a mix of music, comedy, theater, and other events. These are marked with `"filter_mode": "detect-comedy"` in the config. For these sources, do **not** accept all listings — instead, evaluate each event and include it only if it passes the comedy detection check below.
+
+**Comedy detection signals — include the event if any of these are true:**
+- The event title contains words like: *comedy*, *comedian*, *standup*, *stand-up*, *improv*, *sketch*, *funny*, *humor*, *laughs*, or a known comedian's name
+- The venue's own genre/category tag for the event includes *comedy*
+- The event description mentions standup, improv, sketch, touring comedian, or comedy show
+- The event is billed as a "night of comedy", "comedy showcase", "comedy festival", etc.
+
+**Exclude if:**
+- The event is clearly a music concert, theater production, dance, lecture, or other non-comedy format with no comedy indicators
+- The event title and description have no comedy signals even after checking both
+
+**When uncertain:** include the event and add a `"flagged": true` field to the show object so it can be reviewed manually.
+
 ---
 
 ## What to Collect Per Show
@@ -75,7 +91,8 @@ Save results to `data/[city-slug]/shows.json`. Create the folder if it doesn't e
       "price": "$15",
       "url": "https://...",
       "description": "Brief description.",
-      "tags": ["standup"]
+      "tags": ["standup"],
+      "flagged": false
     }
   ]
 }

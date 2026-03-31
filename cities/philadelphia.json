@@ -38,6 +38,55 @@
       "url": "https://www.ticketmaster.com/search?q=comedy&city=Philadelphia",
       "type": "ticketing",
       "notes": "Covers larger venues and touring acts"
+    },
+    {
+      "name": "Kimmel Cultural Campus",
+      "url": "https://www.kimmelculturecampus.org/events",
+      "type": "venue-mixed",
+      "filter_mode": "detect-comedy",
+      "notes": "Multi-venue performing arts campus; comedy is a small fraction of programming"
+    },
+    {
+      "name": "The Met Philadelphia",
+      "url": "https://www.themetphilly.com/events",
+      "type": "venue-mixed",
+      "filter_mode": "detect-comedy",
+      "notes": "Large concert/event venue; check titles and descriptions for comedy acts"
+    },
+    {
+      "name": "Underground Arts",
+      "url": "https://www.undergroundartsphilly.com/events",
+      "type": "venue-mixed",
+      "filter_mode": "detect-comedy",
+      "notes": "Indie music and events venue; occasionally hosts comedy shows"
+    },
+    {
+      "name": "Johnny Brenda's",
+      "url": "https://www.johnnybrendas.com/events",
+      "type": "venue-mixed",
+      "filter_mode": "detect-comedy",
+      "notes": "Fishtown bar and music venue; occasional comedy nights"
+    },
+    {
+      "name": "The Fillmore Philadelphia",
+      "url": "https://www.thefillmorephilly.com/events",
+      "type": "venue-mixed",
+      "filter_mode": "detect-comedy",
+      "notes": "Live Nation-operated music venue; touring comedians appear regularly"
+    },
+    {
+      "name": "Live Nation Philadelphia",
+      "url": "https://www.livenation.com/c/en/comedy?lat=39.9526&long=-75.1652",
+      "type": "ticketing",
+      "filter_mode": "detect-comedy",
+      "notes": "Live Nation comedy filter for Philadelphia area; covers all Live Nation venues including The Fillmore and others"
+    },
+    {
+      "name": "Bowery Presents Philadelphia",
+      "url": "https://www.bowerypresents.com/philadelphia/",
+      "type": "promoter",
+      "filter_mode": "detect-comedy",
+      "notes": "Bowery Presents Philly events; covers venues they book in the city including TLA, Union Transfer, and others"
     }
   ]
 }

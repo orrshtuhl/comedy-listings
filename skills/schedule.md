@@ -32,10 +32,15 @@ To kick off the Monday workflow for all cities, say:
 Claude should then, for each active city in `cities/`:
 1. Read `cities/[slug].json` for city config
 2. Read `skills/scrape-shows.md` and scrape shows → save to `data/[slug]/shows.json`
-3. Read `skills/update-site.md` and generate → save to `site/[slug]/index.html`
-4. Regenerate `site/index.html` homepage
+3. **Flagged show review (pause here):** Check each city's `data/[slug]/shows.json` for any shows where `"flagged": true`. If any exist, surface them to the user before continuing:
+   - List each flagged show with its name, venue, date, and description
+   - Ask the user to confirm each one (keep or remove)
+   - Update `shows.json` accordingly — remove rejected shows, and clear the `flagged` field on approved ones
+   - Only proceed to site update once all flags are resolved (or if there are no flagged shows)
+4. Read `skills/update-site.md` and generate → save to `site/[slug]/index.html`
+5. Regenerate `site/index.html` homepage
 
-Then report back: how many cities processed, how many shows found per city, any sources that failed.
+Then report back: how many cities processed, how many shows found per city, how many flagged shows were reviewed, any sources that failed.
 
 To kick off the Wednesday email for all cities, say:
 
@@ -62,9 +67,10 @@ Every Monday at 9 AM:
 2. Read all city configs in cities/ where status is "active"
 3. For each active city, read skills/scrape-shows.md and scrape comedy shows for the week
 4. Save results to data/[city-slug]/shows.json
-5. For each city updated, read skills/update-site.md and regenerate site/[city-slug]/index.html
-6. Regenerate site/index.html homepage
-7. Summarize: cities processed, show counts, any failures
+5. Check each city's shows.json for entries where "flagged": true — if any exist, stop and present them to the user for review (keep or remove) before continuing; do not proceed to site update until all flags are resolved
+6. For each city updated, read skills/update-site.md and regenerate site/[city-slug]/index.html
+7. Regenerate site/index.html homepage
+8. Summarize: cities processed, show counts, flagged shows reviewed, any failures
 ```
 
 **Wednesday email blast:**
