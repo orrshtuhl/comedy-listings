@@ -1,0 +1,41 @@
+{
+  "_notes": "Press: profile piece, feature article, or year-end best-of list in NYT, Vulture, New Yorker, or Guardian. Special: full-length special on Netflix, HBO Max, or Hulu within last 3 years — most recent only.",
+  "_last_refreshed": "2026-03-30",
+
+  "Comedy Allstars": {},
+  "Don McMillan": {},
+  "Tim Heidecker": {},
+  "Alec Flynn": {},
+  "Dustin Nickerson": {},
+  "Desi Alexander": {},
+  "Whitney Cummings": {
+    "special": { "platform": "YouTube", "title": "Mouthy", "year": 2025, "youtube_id": "TJtnO05avaU" },
+    "_notes": "'Jokes' (Netflix, July 2022) is outside the 3-year window. 'Mouthy' was released on OnlyFans originally but is also on YouTube (34:26, clearly labeled as a comedy special)."
+  },
+  "Devon Walker": {
+    "press": ["Vulture"]
+  },
+  "Trae Crowder": {
+    "_notes": "'Trash Daddy' (2025) is on YouTube. 'Damn Boy!' (2023) is on Prime Video. Neither qualifies."
+  },
+  "Nick Offerman": {
+    "press": ["The Guardian"]
+  },
+  "Mo Gilligan": {
+    "special": { "platform": "Netflix", "title": "In The Moment", "year": 2026 }
+  },
+  "Michael McIntyre": {
+    "_notes": "'25th Year Stand-Up Special' (2024) is on BBC iPlayer only, not available on qualifying platforms in the US. 'Showman' (Netflix, 2020) is outside the 3-year window."
+  },
+  "Katt Williams": {
+    "special": { "platform": "Netflix", "title": "Woke Foke", "year": 2024 }
+  },
+  "Affion Crockett": {},
+  "Mark Normand": {
+    "special": { "platform": "Netflix", "title": "None Too Pleased", "year": 2026 }
+  },
+  "Shane Gillis": {
+    "press": ["New York Times", "The New Yorker"],
+    "special": { "platform": "Netflix", "title": "Beautiful Dogs", "year": 2023 }
+  }
+}
