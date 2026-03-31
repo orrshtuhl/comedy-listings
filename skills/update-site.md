@@ -36,7 +36,10 @@ Read `data/[city-slug]/shows.json` and generate `docs/[city-slug]/index.html`.
 **Page requirements:**
 - Title: `[City Name] Comedy This Week — [Week of Month DD, YYYY]`
 - Shows grouped by month, then by day within each month
-- Each show displays: performer/show name, venue, time, price, and a "Get Tickets" link
+- Each show is a single line in this format, linked to the ticket/info URL:
+  `Weekday M/D Performer Name @ Venue Name $Price`
+  Example: `Tue 3/31 Don McMillan @ Helium Comedy Club $76+`
+- No start time displayed
 - Shows tagged `open-mic` should be visually distinct (e.g. a subtle label or muted style)
 - Mobile-friendly layout (simple responsive CSS — no frameworks)
 - Footer with: "Updated [date]", link to subscribe to this city's email list (use `mailchimp_signup_url` from city config, or placeholder if not yet set), and a "← All cities" link back to the homepage

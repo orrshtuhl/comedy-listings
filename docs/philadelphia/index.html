@@ -16,7 +16,7 @@
     }
 
     a { color: #111; }
-    a:hover { color: #000; text-decoration: underline; }
+    a:hover { text-decoration: underline; }
 
     header {
       max-width: 680px;
@@ -37,8 +37,7 @@
 
     header h1 {
       font-size: 16px;
-      font-weight: normal;
-      letter-spacing: 0;
+      font-weight: bold;
     }
 
     header p.subtitle {
@@ -57,7 +56,6 @@
       border: 1px solid #111;
       padding: 16px;
       margin-bottom: 40px;
-      font-size: 16px;
     }
 
     .month-group {
@@ -70,62 +68,21 @@
       text-transform: uppercase;
       border-bottom: 1px solid #111;
       padding-bottom: 4px;
-      margin-bottom: 16px;
+      margin-bottom: 12px;
     }
 
     .show {
-      display: grid;
-      grid-template-columns: 48px 1fr;
-      gap: 16px;
-      padding: 12px 0;
-      border-bottom: 1px solid #ddd;
+      padding: 6px 0;
+      border-bottom: 1px solid #eee;
     }
 
     .show:last-child { border-bottom: none; }
 
-    .show-date {
-      font-size: 16px;
-      padding-top: 2px;
-    }
-
-    .show-date .day {
-      font-weight: bold;
-    }
-
-    .show-date .weekday {
-      color: #888;
-    }
-
-    .show-name {
-      font-size: 16px;
-      font-weight: bold;
-    }
-
-    .show-name a {
+    .show a {
       text-decoration: none;
     }
 
-    .show-name a:hover { text-decoration: underline; }
-
-    .show-meta {
-      font-size: 16px;
-      color: #444;
-      margin-top: 2px;
-    }
-
-    .show-price {
-      font-size: 16px;
-      margin-top: 2px;
-    }
-
-    .tag {
-      font-size: 16px;
-      font-weight: normal;
-      color: #666;
-    }
-
-    .tag::before { content: " ["; }
-    .tag::after { content: "]"; }
+    .show a:hover { text-decoration: underline; }
 
     footer {
       max-width: 680px;
@@ -154,186 +111,38 @@
     get this in your inbox every week. &rarr; <a href="#">sign up</a>
   </div>
 
-  <!-- MARCH -->
   <div class="month-group">
     <div class="month-label">March 2026</div>
-
-    <div class="show">
-      <div class="show-date"><div class="day">31</div><div class="weekday">tue</div></div>
-      <div class="show-info">
-        <div class="show-name"><a href="https://www.punchlinephilly.com/shows" target="_blank">Comedy Allstars</a></div>
-        <div class="show-meta">Punch Line Comedy Club &mdash; 7:30 PM</div>
-        <div class="show-price">$33+</div>
-      </div>
-    </div>
-
-    <div class="show">
-      <div class="show-date"><div class="day">31</div><div class="weekday">tue</div></div>
-      <div class="show-info">
-        <div class="show-name"><a href="https://philadelphia.heliumcomedy.com/events" target="_blank">Don McMillan</a></div>
-        <div class="show-meta">Helium Comedy Club &mdash; 7:30 PM</div>
-        <div class="show-price">$76+</div>
-      </div>
-    </div>
-
-    <div class="show">
-      <div class="show-date"><div class="day">31</div><div class="weekday">tue</div></div>
-      <div class="show-info">
-        <div class="show-name"><a href="https://www.fillmorephilly.com" target="_blank">ON CINEMA: Tim Heidecker &amp; Gregg Turkington</a></div>
-        <div class="show-meta">The Fillmore Philadelphia &mdash; 8:00 PM</div>
-        <div class="show-price">$48+</div>
-      </div>
-    </div>
+    <div class="show"><a href="https://www.punchlinephilly.com/shows" target="_blank">Tue 3/31 Comedy Allstars @ Punch Line Comedy Club $33+</a></div>
+    <div class="show"><a href="https://philadelphia.heliumcomedy.com/events" target="_blank">Tue 3/31 Don McMillan @ Helium Comedy Club $76+</a></div>
+    <div class="show"><a href="https://www.fillmorephilly.com" target="_blank">Tue 3/31 ON CINEMA: Tim Heidecker &amp; Gregg Turkington @ The Fillmore Philadelphia $48+</a></div>
   </div>
 
-  <!-- APRIL -->
   <div class="month-group">
     <div class="month-label">April 2026</div>
-
-    <div class="show">
-      <div class="show-date"><div class="day">1</div><div class="weekday">wed</div></div>
-      <div class="show-info">
-        <div class="show-name"><a href="https://philadelphia.heliumcomedy.com/events" target="_blank">Alec Flynn</a></div>
-        <div class="show-meta">Helium Comedy Club &mdash; 7:00 PM</div>
-        <div class="show-price">$67+</div>
-      </div>
-    </div>
-
-    <div class="show">
-      <div class="show-date"><div class="day">1</div><div class="weekday">wed</div></div>
-      <div class="show-info">
-        <div class="show-name"><a href="https://www.punchlinephilly.com/shows" target="_blank">Philly All-Pro Comedy Showcase</a></div>
-        <div class="show-meta">Punch Line Comedy Club &mdash; 7:30 PM</div>
-        <div class="show-price">$27+</div>
-      </div>
-    </div>
-
-    <div class="show">
-      <div class="show-date"><div class="day">2</div><div class="weekday">thu</div></div>
-      <div class="show-info">
-        <div class="show-name"><a href="https://philadelphia.heliumcomedy.com/events" target="_blank">Dustin Nickerson</a></div>
-        <div class="show-meta">Helium Comedy Club &mdash; 7:15 PM</div>
-        <div class="show-price">$63+</div>
-      </div>
-    </div>
-
-    <div class="show">
-      <div class="show-date"><div class="day">2</div><div class="weekday">thu</div></div>
-      <div class="show-info">
-        <div class="show-name"><a href="https://www.punchlinephilly.com/shows" target="_blank">Desi Alexander: Stress Signal Tour</a></div>
-        <div class="show-meta">Punch Line Comedy Club &mdash; 7:30 PM</div>
-        <div class="show-price">TBD</div>
-      </div>
-    </div>
-
-    <div class="show">
-      <div class="show-date"><div class="day">3</div><div class="weekday">fri</div></div>
-      <div class="show-info">
-        <div class="show-name"><a href="https://www.ensembleartsphilly.org/tickets-and-events/ensemble-arts-philly-presents/whitney-cummings-big-baby" target="_blank">Whitney Cummings: Big Baby Tour</a></div>
-        <div class="show-meta">Miller Theater &mdash; 7:00 PM</div>
-        <div class="show-price">TBD</div>
-      </div>
-    </div>
-
-    <div class="show">
-      <div class="show-date"><div class="day">3</div><div class="weekday">fri</div></div>
-      <div class="show-info">
-        <div class="show-name"><a href="https://www.punchlinephilly.com/shows" target="_blank">Devon Walker</a></div>
-        <div class="show-meta">Punch Line Comedy Club &mdash; 7:00 PM</div>
-        <div class="show-price">TBD</div>
-      </div>
-    </div>
-
-    <div class="show">
-      <div class="show-date"><div class="day">10</div><div class="weekday">fri</div></div>
-      <div class="show-info">
-        <div class="show-name"><a href="https://www.ticketmaster.com/trae-crowder-philadelphia-pennsylvania-04-10-2026/event/0200638C113CD717" target="_blank">Trae Crowder</a></div>
-        <div class="show-meta">Punch Line Comedy Club &mdash; 7:30 PM</div>
-        <div class="show-price">TBD</div>
-      </div>
-    </div>
-
-    <div class="show">
-      <div class="show-date"><div class="day">12</div><div class="weekday">sun</div></div>
-      <div class="show-info">
-        <div class="show-name"><a href="https://www.livenation.com/event/vv17FZbMGkM33ijU/nick-offerman-big-woodchuck" target="_blank">Nick Offerman: Big Woodchuck Tour</a></div>
-        <div class="show-meta">The Met Philadelphia &mdash; 7:00 PM</div>
-        <div class="show-price">TBD</div>
-      </div>
-    </div>
-
-    <div class="show">
-      <div class="show-date"><div class="day">12</div><div class="weekday">sun</div></div>
-      <div class="show-info">
-        <div class="show-name"><a href="https://www.punchlinephilly.com/shows" target="_blank">Mo Gilligan: The Mo You Know</a></div>
-        <div class="show-meta">Punch Line Comedy Club &mdash; 7:30 PM</div>
-        <div class="show-price">TBD</div>
-      </div>
-    </div>
-
-    <div class="show">
-      <div class="show-date"><div class="day">22</div><div class="weekday">wed</div></div>
-      <div class="show-info">
-        <div class="show-name"><a href="https://www.ensembleartsphilly.org" target="_blank">Michael McIntyre: Hello America! Tour</a></div>
-        <div class="show-meta">Miller Theater &mdash; 7:30 PM</div>
-        <div class="show-price">TBD</div>
-      </div>
-    </div>
-
-    <div class="show">
-      <div class="show-date"><div class="day">24</div><div class="weekday">fri</div></div>
-      <div class="show-info">
-        <div class="show-name"><a href="https://www.ticketmaster.com/katt-williams-philadelphia-pennsylvania-04-24-2026/event/0200637D0D3B496D" target="_blank">Katt Williams: The Golden Age Tour</a></div>
-        <div class="show-meta">Liacouras Center &mdash; 8:00 PM</div>
-        <div class="show-price">$111+</div>
-      </div>
-    </div>
+    <div class="show"><a href="https://philadelphia.heliumcomedy.com/events" target="_blank">Wed 4/1 Alec Flynn @ Helium Comedy Club $67+</a></div>
+    <div class="show"><a href="https://www.punchlinephilly.com/shows" target="_blank">Wed 4/1 Philly All-Pro Comedy Showcase @ Punch Line Comedy Club $27+</a></div>
+    <div class="show"><a href="https://philadelphia.heliumcomedy.com/events" target="_blank">Thu 4/2 Dustin Nickerson @ Helium Comedy Club $63+</a></div>
+    <div class="show"><a href="https://www.punchlinephilly.com/shows" target="_blank">Thu 4/2 Desi Alexander: Stress Signal Tour @ Punch Line Comedy Club TBD</a></div>
+    <div class="show"><a href="https://www.ensembleartsphilly.org/tickets-and-events/ensemble-arts-philly-presents/whitney-cummings-big-baby" target="_blank">Fri 4/3 Whitney Cummings: Big Baby Tour @ Miller Theater TBD</a></div>
+    <div class="show"><a href="https://www.punchlinephilly.com/shows" target="_blank">Fri 4/3 Devon Walker @ Punch Line Comedy Club TBD</a></div>
+    <div class="show"><a href="https://www.ticketmaster.com/trae-crowder-philadelphia-pennsylvania-04-10-2026/event/0200638C113CD717" target="_blank">Fri 4/10 Trae Crowder @ Punch Line Comedy Club TBD</a></div>
+    <div class="show"><a href="https://www.livenation.com/event/vv17FZbMGkM33ijU/nick-offerman-big-woodchuck" target="_blank">Sun 4/12 Nick Offerman: Big Woodchuck Tour @ The Met Philadelphia TBD</a></div>
+    <div class="show"><a href="https://www.punchlinephilly.com/shows" target="_blank">Sun 4/12 Mo Gilligan: The Mo You Know @ Punch Line Comedy Club TBD</a></div>
+    <div class="show"><a href="https://www.ensembleartsphilly.org" target="_blank">Wed 4/22 Michael McIntyre: Hello America! Tour @ Miller Theater TBD</a></div>
+    <div class="show"><a href="https://www.ticketmaster.com/katt-williams-philadelphia-pennsylvania-04-24-2026/event/0200637D0D3B496D" target="_blank">Fri 4/24 Katt Williams: The Golden Age Tour @ Liacouras Center $111+</a></div>
   </div>
 
-  <!-- MAY -->
   <div class="month-group">
     <div class="month-label">May 2026</div>
-
-    <div class="show">
-      <div class="show-date"><div class="day">1</div><div class="weekday">fri</div></div>
-      <div class="show-info">
-        <div class="show-name"><a href="https://www.ticketmaster.com/affion-crockett-philadelphia-pennsylvania-05-01-2026/event/02006352D4D69133" target="_blank">Affion Crockett</a></div>
-        <div class="show-meta">Punch Line Comedy Club &mdash; 7:30 PM &mdash; 21+</div>
-        <div class="show-price">$65+</div>
-      </div>
-    </div>
-
-    <div class="show">
-      <div class="show-date"><div class="day">7</div><div class="weekday">thu</div></div>
-      <div class="show-info">
-        <div class="show-name"><a href="https://www.lanterntheater.org/plays/franklinland.html" target="_blank">Franklinland</a><span class="tag">sketch</span></div>
-        <div class="show-meta">Lantern Theater Company &mdash; various times &mdash; runs through june 7</div>
-        <div class="show-price">TBD</div>
-      </div>
-    </div>
-
-    <div class="show">
-      <div class="show-date"><div class="day">29</div><div class="weekday">fri</div></div>
-      <div class="show-info">
-        <div class="show-name"><a href="https://philadelphia.heliumcomedy.com/events" target="_blank">Mark Normand</a></div>
-        <div class="show-meta">Helium Comedy Club &mdash; 9:15 PM</div>
-        <div class="show-price">$95+</div>
-      </div>
-    </div>
+    <div class="show"><a href="https://www.ticketmaster.com/affion-crockett-philadelphia-pennsylvania-05-01-2026/event/02006352D4D69133" target="_blank">Fri 5/1 Affion Crockett @ Punch Line Comedy Club $65+ (21+)</a></div>
+    <div class="show"><a href="https://www.lanterntheater.org/plays/franklinland.html" target="_blank">Thu 5/7 Franklinland @ Lantern Theater Company TBD (runs through 6/7)</a></div>
+    <div class="show"><a href="https://philadelphia.heliumcomedy.com/events" target="_blank">Fri 5/29 Mark Normand @ Helium Comedy Club $95+</a></div>
   </div>
 
-  <!-- JULY -->
   <div class="month-group">
     <div class="month-label">July 2026</div>
-
-    <div class="show">
-      <div class="show-date"><div class="day">17</div><div class="weekday">fri</div></div>
-      <div class="show-info">
-        <div class="show-name"><a href="https://www.ticketmaster.com/shane-gillis-special-guests-live-at-philadelphia-pennsylvania-07-17-2026/event/020063740112D43F" target="_blank">Shane Gillis &amp; Special Guests Live</a></div>
-        <div class="show-meta">Lincoln Financial Field &mdash; 8:00 PM</div>
-        <div class="show-price">TBD</div>
-      </div>
-    </div>
+    <div class="show"><a href="https://www.ticketmaster.com/shane-gillis-special-guests-live-at-philadelphia-pennsylvania-07-17-2026/event/020063740112D43F" target="_blank">Fri 7/17 Shane Gillis &amp; Special Guests Live @ Lincoln Financial Field TBD</a></div>
   </div>
 
 </main>
