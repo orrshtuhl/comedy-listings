@@ -46,10 +46,16 @@ Read `data/[city-slug]/shows.json` and generate `docs/[city-slug]/index.html`.
   - Must be under 20 minutes long
   - Must have been published within the last 12 months
   - Search YouTube for `[comedian name] stand up comedy 2025` and extract results from `ytInitialData`
-  - Format: `<a href="https://www.youtube.com/watch?v=[id]" target="_blank">(YT)</a>` appended after the main listing link
+  - Format: `(<a href="https://www.youtube.com/watch?v=[id]" target="_blank">YT</a>)` appended after the main listing link — only "YT" is the hyperlink; parentheses are plain text
   - Skip if no qualifying video is found — don't force it
+- If a comedian has flair data in `data/[city-slug]/flair.json`, render a second line below the listing inside a `<div class="show-flair">`. Only render this line if flair exists.
+  - 👀 for press coverage: `👀 [Outlet Name]` — one per qualifying outlet (e.g. `👀 New York Times`)
+  - 🍿 for streaming special: `🍿 [Platform Name]` (e.g. `🍿 Netflix`, `🍿 YouTube`). For YouTube specials, link the platform name to the video: `🍿 <a href="https://www.youtube.com/watch?v=[youtube_id]" target="_blank">YouTube</a>`
+  - If multiple flair items, separate with two non-breaking spaces: `👀 New York Times&nbsp;&nbsp;🍿 Netflix`
+  - Same font size and family as the rest of the page (16px Courier New); use muted color (e.g. `#555`) to read as secondary
+  - Match flair to shows by the `performer` field in `shows.json` — look up by exact name
 - Mobile-friendly layout (simple responsive CSS — no frameworks)
-- Footer with: "Updated [date]", link to subscribe to this city's email list (use `mailchimp_signup_url` from city config, or placeholder if not yet set), and a "← All cities" link back to the homepage
+- Footer with: "Updated [date]", a "← All cities" link back to the homepage, a subscribe link (use `mailchimp_signup_url` from city config, or `#` placeholder if not yet set), and a "version history" link pointing to `../changelog/`
 
 **Design principles:**
 - Simple, fast-loading — no JavaScript required

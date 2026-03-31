@@ -13,6 +13,7 @@ Defines when each workflow runs, in what order, and how to trigger the full week
 | Monday | Scrape this week's comedy shows | `skills/scrape-shows.md` | All active cities |
 | Monday | Update website with new listings | `skills/update-site.md` | All active cities + homepage |
 | Wednesday | Send MailChimp email blast | `skills/mailchimp-blast.md` | All active cities |
+| Daily (evening) | Update version history page | `skills/update-changelog.md` | Whole project |
 
 ---
 
@@ -74,6 +75,16 @@ Every Wednesday at 8 AM:
 3. For each active city, read skills/mailchimp-blast.md and compose the weekly email
 4. Send via MailChimp API (or save to drafts/[city-slug]/email-draft.html if API not configured)
 5. Summarize: cities emailed, any failures
+```
+
+**Daily changelog update:**
+```
+Every day at 11 PM:
+1. Read CLAUDE.md for project context
+2. Read skills/update-changelog.md
+3. Check git log for any commits made today
+4. If commits exist, summarize them and update docs/changelog/index.html with one entry for today
+5. If no commits, do nothing
 ```
 
 **Note:** Scheduled tasks only run while your computer is awake and Claude Desktop is open.
