@@ -1,8 +1,8 @@
 {
   "city": "philadelphia",
   "week_of": "2026-03-30",
-  "generated_at": "2026-03-30T15:00:00",
-  "show_count": 18,
+  "generated_at": "2026-03-31T00:00:00",
+  "show_count": 25,
   "shows": [
     {
       "name": "Comedy Allstars",
@@ -12,7 +12,8 @@
       "price": "$33+",
       "url": "https://www.punchlinephilly.com/shows",
       "description": "Comedy showcase featuring multiple stand-up comedians.",
-      "tags": ["standup"]
+      "tags": ["standup"],
+      "flagged": false
     },
     {
       "name": "Don McMillan",
@@ -22,7 +23,8 @@
       "price": "$76+",
       "url": "https://philadelphia.heliumcomedy.com/events",
       "description": "Stand-up comedian and visual artist Don McMillan.",
-      "tags": ["standup"]
+      "tags": ["standup"],
+      "flagged": false
     },
     {
       "name": "ON CINEMA: Tim Heidecker & Gregg Turkington",
@@ -32,7 +34,8 @@
       "price": "$48+",
       "url": "https://www.fillmorephilly.com",
       "description": "Tim Heidecker & Gregg Turkington live show from the ON CINEMA podcast.",
-      "tags": ["other"]
+      "tags": ["other"],
+      "flagged": false
     },
     {
       "name": "Alec Flynn",
@@ -42,7 +45,8 @@
       "price": "$67+",
       "url": "https://philadelphia.heliumcomedy.com/events",
       "description": "Stand-up comedian Alec Flynn.",
-      "tags": ["standup"]
+      "tags": ["standup"],
+      "flagged": false
     },
     {
       "name": "Philly All-Pro Comedy Showcase",
@@ -52,7 +56,8 @@
       "price": "$27+",
       "url": "https://www.punchlinephilly.com/shows",
       "description": "Regional comedy showcase featuring Philadelphia comedians.",
-      "tags": ["standup"]
+      "tags": ["standup"],
+      "flagged": false
     },
     {
       "name": "Dustin Nickerson",
@@ -62,7 +67,8 @@
       "price": "$63+",
       "url": "https://philadelphia.heliumcomedy.com/events",
       "description": "Stand-up comedian Dustin Nickerson.",
-      "tags": ["standup"]
+      "tags": ["standup"],
+      "flagged": false
     },
     {
       "name": "Desi Alexander: Stress Signal Tour",
@@ -72,17 +78,19 @@
       "price": "TBD",
       "url": "https://www.punchlinephilly.com/shows",
       "description": "Desi Alexander performs on his Stress Signal Tour.",
-      "tags": ["standup"]
+      "tags": ["standup"],
+      "flagged": false
     },
     {
       "name": "Whitney Cummings: Big Baby Tour",
-      "venue": "Miller Theater Philadelphia",
+      "venue": "Kimmel Cultural Campus",
       "date": "2026-04-03",
       "time": "7:00 PM",
       "price": "TBD",
-      "url": "https://www.ensembleartsphilly.org/tickets-and-events/ensemble-arts-philly-presents/whitney-cummings-big-baby",
+      "url": "https://www.kimmelculturecampus.org/events",
       "description": "Whitney Cummings performs her Big Baby comedy tour.",
-      "tags": ["standup"]
+      "tags": ["standup"],
+      "flagged": false
     },
     {
       "name": "Devon Walker",
@@ -92,7 +100,30 @@
       "price": "TBD",
       "url": "https://www.punchlinephilly.com/shows",
       "description": "Stand-up comedian Devon Walker.",
-      "tags": ["standup"]
+      "tags": ["standup"],
+      "flagged": false
+    },
+    {
+      "name": "Tight Pants Comedy",
+      "venue": "Punch Line Comedy Club",
+      "date": "2026-04-09",
+      "time": "7:30 PM",
+      "price": "TBD",
+      "url": "https://www.punchlinephilly.com/shows",
+      "description": "A night of standup comedy.",
+      "tags": ["standup"],
+      "flagged": false
+    },
+    {
+      "name": "Rob Anderson: Are You Afraid Of The '90s?",
+      "venue": "The Fillmore Philadelphia",
+      "date": "2026-04-09",
+      "time": "7:30 PM",
+      "price": "TBD",
+      "url": "https://www.thefillmorephilly.com/shows",
+      "description": "Rob Anderson's '90s-themed comedy show at The Fillmore.",
+      "tags": ["standup"],
+      "flagged": false
     },
     {
       "name": "Trae Crowder",
@@ -102,17 +133,19 @@
       "price": "TBD",
       "url": "https://www.ticketmaster.com/trae-crowder-philadelphia-pennsylvania-04-10-2026/event/0200638C113CD717",
       "description": "Stand-up comedian and political humorist Trae Crowder.",
-      "tags": ["standup"]
+      "tags": ["standup"],
+      "flagged": false
     },
     {
-      "name": "Nick Offerman: Big Woodchuck Tour",
-      "venue": "The Met Philadelphia",
-      "date": "2026-04-12",
-      "time": "7:00 PM",
+      "name": "Bridget Everett: Big Titties, Big Dreams",
+      "venue": "Kimmel Cultural Campus",
+      "date": "2026-04-11",
+      "time": "8:00 PM",
       "price": "TBD",
-      "url": "https://www.livenation.com/event/vv17FZbMGkM33ijU/nick-offerman-big-woodchuck",
-      "description": "Nick Offerman presents an evening of comedy and storytelling.",
-      "tags": ["standup"]
+      "url": "https://www.kimmelculturecampus.org/events",
+      "description": "Bridget Everett brings her comedy show to the Kimmel.",
+      "tags": ["standup"],
+      "flagged": false
     },
     {
       "name": "Mo Gilligan: The Mo You Know",
@@ -122,17 +155,63 @@
       "price": "TBD",
       "url": "https://www.punchlinephilly.com/shows",
       "description": "British-Nigerian comedian Mo Gilligan on his The Mo You Know tour.",
-      "tags": ["standup"]
+      "tags": ["standup"],
+      "flagged": false
+    },
+    {
+      "name": "Nick Offerman: Big Woodchuck",
+      "venue": "The Met Philadelphia",
+      "date": "2026-04-12",
+      "time": "7:00 PM",
+      "price": "TBD",
+      "url": "https://www.livenation.com/event/vv17FZbMGkM33ijU/nick-offerman-big-woodchuck",
+      "description": "Nick Offerman live at The Met. An evening of comedy and storytelling.",
+      "tags": ["standup"],
+      "flagged": false
+    },
+    {
+      "name": "The Moth Storyslam: Sus",
+      "venue": "Punch Line Comedy Club",
+      "date": "2026-04-14",
+      "time": "7:30 PM",
+      "price": "TBD",
+      "url": "https://www.punchlinephilly.com/shows",
+      "description": "The Moth Storyslam — true personal stories told live, themed 'Sus'.",
+      "tags": ["other"],
+      "flagged": false
+    },
+    {
+      "name": "Pat Burtscher",
+      "venue": "Punch Line Comedy Club",
+      "date": "2026-04-15",
+      "time": "TBD",
+      "price": "TBD",
+      "url": "https://www.punchlinephilly.com/shows",
+      "description": "Standup comedian Pat Burtscher live at Punchline.",
+      "tags": ["standup"],
+      "flagged": false
+    },
+    {
+      "name": "Ilana Glazer",
+      "venue": "Helium Comedy Club Philadelphia",
+      "date": "2026-04-20",
+      "time": "7:00 PM",
+      "price": "TBD",
+      "url": "https://philadelphia.heliumcomedy.com/events",
+      "description": "Ilana Glazer, co-creator and star of Broad City, performs live at Helium.",
+      "tags": ["standup"],
+      "flagged": false
     },
     {
       "name": "Michael McIntyre: Hello America! Tour",
-      "venue": "Miller Theater Philadelphia",
+      "venue": "Kimmel Cultural Campus",
       "date": "2026-04-22",
       "time": "7:30 PM",
       "price": "TBD",
-      "url": "https://www.ensembleartsphilly.org",
+      "url": "https://www.kimmelculturecampus.org/events",
       "description": "British comedian Michael McIntyre returns to North America with his Hello America! tour.",
-      "tags": ["standup"]
+      "tags": ["standup"],
+      "flagged": false
     },
     {
       "name": "Katt Williams: The Golden Age Tour",
@@ -142,7 +221,19 @@
       "price": "$111+",
       "url": "https://www.ticketmaster.com/katt-williams-philadelphia-pennsylvania-04-24-2026/event/0200637D0D3B496D",
       "description": "Comedian Katt Williams performs on The Golden Age Tour.",
-      "tags": ["standup"]
+      "tags": ["standup"],
+      "flagged": false
+    },
+    {
+      "name": "Austin Nasso",
+      "venue": "Helium Comedy Club Philadelphia",
+      "date": "2026-04-30",
+      "time": "7:30 PM",
+      "price": "$132+",
+      "url": "https://philadelphia.heliumcomedy.com/events",
+      "description": "Standup comedian Austin Nasso live at Helium.",
+      "tags": ["standup"],
+      "flagged": false
     },
     {
       "name": "Affion Crockett",
@@ -152,7 +243,8 @@
       "price": "$65+",
       "url": "https://www.ticketmaster.com/affion-crockett-philadelphia-pennsylvania-05-01-2026/event/02006352D4D69133",
       "description": "Stand-up comedian and impressionist Affion Crockett. 21+ event.",
-      "tags": ["standup"]
+      "tags": ["standup"],
+      "flagged": false
     },
     {
       "name": "Franklinland",
@@ -162,7 +254,8 @@
       "price": "TBD",
       "url": "https://www.lanterntheater.org/plays/franklinland.html",
       "description": "Irreverent theatrical comedy about Benjamin Franklin and his son William. Runs through June 7, 2026.",
-      "tags": ["sketch"]
+      "tags": ["sketch"],
+      "flagged": false
     },
     {
       "name": "Mark Normand",
@@ -172,7 +265,8 @@
       "price": "$95+",
       "url": "https://philadelphia.heliumcomedy.com/events",
       "description": "Stand-up comedian Mark Normand.",
-      "tags": ["standup"]
+      "tags": ["standup"],
+      "flagged": false
     },
     {
       "name": "Shane Gillis & Special Guests Live",
@@ -182,7 +276,8 @@
       "price": "TBD",
       "url": "https://www.ticketmaster.com/shane-gillis-special-guests-live-at-philadelphia-pennsylvania-07-17-2026/event/020063740112D43F",
       "description": "Shane Gillis' massive homecoming show at Lincoln Financial Field — his largest headline show ever.",
-      "tags": ["standup"]
+      "tags": ["standup"],
+      "flagged": false
     }
   ]
 }
