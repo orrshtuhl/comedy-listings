@@ -41,6 +41,13 @@ Read `data/[city-slug]/shows.json` and generate `docs/[city-slug]/index.html`.
   Example: `Tue 3/31 Don McMillan @ Helium Comedy Club $76+`
 - No start time displayed
 - Shows tagged `open-mic` should be visually distinct (e.g. a subtle label or muted style)
+- If a comedian has a qualifying YouTube clip, append a `(YT)` link after the listing line. Rules for qualifying:
+  - Must be a stand-up comedy clip (not an interview, talk show appearance, or sketch)
+  - Must be under 20 minutes long
+  - Must have been published within the last 12 months
+  - Search YouTube for `[comedian name] stand up comedy 2025` and extract results from `ytInitialData`
+  - Format: `<a href="https://www.youtube.com/watch?v=[id]" target="_blank">(YT)</a>` appended after the main listing link
+  - Skip if no qualifying video is found — don't force it
 - Mobile-friendly layout (simple responsive CSS — no frameworks)
 - Footer with: "Updated [date]", link to subscribe to this city's email list (use `mailchimp_signup_url` from city config, or placeholder if not yet set), and a "← All cities" link back to the homepage
 
